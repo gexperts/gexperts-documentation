@@ -1,0 +1,105 @@
+﻿project
+begin
+  projectid = {2B0E7775-0BFC-430A-8868-2298FFEC9110}
+  target
+  begin
+    name = Default
+    targetid = {91EBA48D-F632-4BC0-8294-A254C6A4785E}
+    rootaction
+    begin
+      action.textfile.write
+      begin
+        createifnotexists = true
+        encoding = ANSI
+        expandvariables = true
+        filename = %GXDocDir%\\Variables.txt
+        id = {21AEFD95-C599-4E6E-8C64-30B4250C1746}
+        ignorenocontent = true
+        newcontent = "VERSION_MAJOR=%MajorVersion%" +
+                     "VERSION_MINOR=%MinorVersion%%ReleaseVersion%" +
+                     "VERSION_BUILD=%Build%" +
+                     ""
+        writebom = true
+        writetoposition = toOverwrite
+      end
+      action.helpandmanual.4
+      begin
+        actioncomment = "The custom template only removes the navigation header text in the HTML output"
+        browserhelpfile = %GXDocOutputDir%\\HTML\\index.html
+        browserhlpopt = HTML
+        compilebrowserhlp = true
+        compiledocxhelp = false
+        compileepub = false
+        compilehtmlhelp = true
+        compilemmh = false
+        compilemobihelp = false
+        compilemshelp2 = false
+        compilepdf = false
+        compilertf = false
+        compilewinhelp = false
+        description = "Compile Help File"
+        docxhelpopt = DOCX
+        dontclose = false
+        epubopt = EPUB
+        failonwarnings = true
+        hmversion = hm7
+        htmlhelpfile = %GXDocOutputDir%\\GExperts.chm
+        htmlhelpopt = CHM
+        id = {EABEF7B7-F07F-4BF2-8B6B-65CD17CEF42E}
+        keeptemp = false
+        mmhopt = EBOOK
+        mobihelpopt = EBOOK
+        mshelp2opt = HXS
+        pdfopt = PDF
+        projectfile = %GXDocDir%\\GExperts.hmxp
+        rtfopt = RTF
+        skinfilename = %GXDocDir%\\GExpertsSkinBlack.hmskin
+        variablesfile = %GXDocDir%\\Variables.txt
+        webskinfilename = %GXDocDir%\\GExpertsSkinBlack.hmskin
+        winhelpopt = HLP
+      end
+    end
+  end
+  variable
+  begin
+    defaultvalue = 0
+    groupname = Version
+    name = Build
+    variablescope = vtProject
+  end
+  variable
+  begin
+    defaultvalue = %FBPROJECTDIR%
+    groupname = Dir
+    name = GXDocDir
+    variablescope = vtProject
+  end
+  variable
+  begin
+    defaultvalue = %GXDocDir%\\Output
+    groupname = Dir
+    name = GXDocOutputDir
+    variablescope = vtProject
+  end
+  variable
+  begin
+    defaultvalue = 1
+    groupname = Version
+    name = MajorVersion
+    variablescope = vtProject
+  end
+  variable
+  begin
+    defaultvalue = 3
+    groupname = Version
+    name = MinorVersion
+    variablescope = vtProject
+  end
+  variable
+  begin
+    defaultvalue = 8
+    groupname = Version
+    name = ReleaseVersion
+    variablescope = vtProject
+  end
+end
