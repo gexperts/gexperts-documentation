@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic template="Default" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Debug Window</title>
+  <keywords>
+    <keyword translate="true">Debug Window</keyword>
+    <keyword translate="true">SendDebug</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Debug Window</text></para>
+    </header>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">The debug window is useful in those situations where it is difficult to use the regular IDE debugger (debugging or data collection with end users, debugging timing sensitive routines, paint routines, etc.). &#160;To use the debug window, include the unit DbugIntf.pas that comes with GExperts in your unit&apos;s uses clause and then in the spot you need a debug statement inserted, type </text><text styleclass="Courier Fixed" translate="true">SendDebug(&apos;Debug note&apos;);</text><text styleclass="Normal" translate="true">. &#160;You may want to wrap your debug statements in a conditional define such as </text><text styleclass="Courier Fixed" translate="true">{$IFDEF DEBUG}</text><text styleclass="Normal" translate="true"> and create an IDE Code Template to easily insert new debug statements into your code.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Three types of messages can be sent to the debug window: informational, warning, and error. &#160;These message types are sent using the mtInformation, mtWarning and mtError constants that are defined in the VCL&apos;s Dialogs unit and can be sent using the SendDebugEx command: </text><text styleclass="Courier Fixed" translate="true">SendDebugEx(&apos;Debug message&apos;, mtInformation);</text><text styleclass="Normal" translate="true">. &#160;DbugIntf.pas also defines several other useful methods to send data types directly and signal entry into and exiting from methods, etc.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">The GExperts Debug Window is a separate program (GExpertsDebugWindow.exe) that sits in the task tray of the Windows shell. &#160;If you try to send a debug message and the Debug Window is not running, GExperts will try to start the window automatically. &#160;Whenever the window receives a new message, the icon in the task tray will change from a plain paper icon to a paper icon with a pen writing on it.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">The Debug Window allows you to clear the message display, copy the messages to the clipboard, save them to a file, pause collection of messages, and configure some basic options.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><image src="Debug Window.png" scale="100.00%" style="font-family:&apos;MS Sans Serif&apos;; font-size:8pt; color:#000000;"></image></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

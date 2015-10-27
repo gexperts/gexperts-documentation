@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="ErikBerry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Introduction</title>
+  <keywords>
+    <keyword translate="true">About</keyword>
+    <keyword translate="true">Introduction</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><image src="GExpertsLogo.png" scale="100.00%" styleclass="Image Caption"></image></para>
+    </header>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" style="font-weight:bold;" translate="true">GExperts Version 1.38 (Updated September, 2015)</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">GExperts is a free set of tools built to increase the productivity of Delphi and C++Builder programmers by adding several features to the IDE. &#160;GExperts is developed as Open Source software and encourages user contributions to the project. </text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">GExperts would not exist without the help and advice of many people. &#160;For a list of credits, see the change log in the Readme.txt and open the GExperts about box.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">Please take a moment to read the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="License_Agreement" styleclass="Normal" translate="true">GExperts License Agreement</link><text styleclass="Normal" translate="true">. &#160;Also, remember that the Readme.txt file included with GExperts will often contain information not included in this help file including the latest changes, known bugs, and plans for the future.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Normal" translate="true">The latest version of GExperts and the FAQ are always available at: </text><link displaytype="text" defaultstyle="true" type="weblink" href="http://www.gexperts.org/" target="_blank" style="font-family:Arial; font-size:10pt; text-decoration:underline; color:#0000ff;" translate="true">http://www.gexperts.org/</link><text styleclass="Normal" translate="true">. &#160;You can send bug reports and suggestions using the Feedback Wizard in the GExperts about box.</text></para>
+  </body>
+</topic>
