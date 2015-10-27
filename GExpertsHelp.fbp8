@@ -21,7 +21,8 @@ begin
           failifvariablenotininifile = true
           id = {D39C9BDE-94BD-4C0F-B6C3-FF75A29BB562}
           ignorefilenotfound = false
-          sectionname = FBVariables
+          inifile = %IniFile%
+          sectionname = Version
           variables = "MajorVersion" +
                       "MinorVersion" +
                       "ReleaseVersion" +
