@@ -7,6 +7,31 @@ begin
     targetid = {91EBA48D-F632-4BC0-8294-A254C6A4785E}
     rootaction
     begin
+      action.file.exists
+      begin
+        existsmode = feFailIfMissing
+        fileordirectory = %IniFile%
+        id = {96B8A65E-7F86-4523-97F7-E0618CBE6EA4}
+        ignorefailure = true
+        usefilespec = true
+        action.variables.loadfromini
+        begin
+          createvarininiifnotexists = false
+          failifvariablenotdefined = true
+          failifvariablenotininifile = true
+          id = {D39C9BDE-94BD-4C0F-B6C3-FF75A29BB562}
+          ignorefilenotfound = false
+          sectionname = FBVariables
+          variables = "MajorVersion" +
+                      "MinorVersion" +
+                      "ReleaseVersion" +
+                      ""
+          variabletypes = "String" +
+                          "String" +
+                          "String" +
+                          ""
+        end
+      end
       action.textfile.write
       begin
         createifnotexists = true
@@ -15,9 +40,9 @@ begin
         filename = %GXDocDir%\\Variables.txt
         id = {21AEFD95-C599-4E6E-8C64-30B4250C1746}
         ignorenocontent = true
-        newcontent = "VERSION_MAJOR=%MajorVersion%" +
-                     "VERSION_MINOR=%MinorVersion%%ReleaseVersion%" +
-                     "VERSION_BUILD=%Build%" +
+        newcontent = "VERSION_MAJOR\=%MajorVersion%" +
+                     "VERSION_MINOR\=%MinorVersion%%ReleaseVersion%" +
+                     "VERSION_BUILD\=%Build%" +
                      ""
         writebom = true
         writetoposition = toOverwrite
@@ -79,6 +104,12 @@ begin
     defaultvalue = %GXDocDir%\\Output
     groupname = Dir
     name = GXDocOutputDir
+    variablescope = vtProject
+  end
+  variable
+  begin
+    groupname = Version
+    name = IniFile
     variablescope = vtProject
   end
   variable
