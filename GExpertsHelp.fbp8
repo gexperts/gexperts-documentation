@@ -41,11 +41,11 @@ begin
         filename = %GXDocDir%\\Variables.txt
         id = {21AEFD95-C599-4E6E-8C64-30B4250C1746}
         ignorenocontent = true
-        newcontent = "VERSION_MAJOR\=%MajorVersion%" +
-                     "VERSION_MINOR\=%MinorVersion%%ReleaseVersion%" +
-                     "VERSION_BUILD\=%Build%" +
+        newcontent = "VERSION_MAJOR\\=%MajorVersion%" +
+                     "VERSION_MINOR\\=%MinorVersion%%ReleaseVersion%" +
+                     "VERSION_BUILD\\=%Build%" +
                      ""
-        writebom = true
+        writebom = false
         writetoposition = toOverwrite
       end
       action.helpandmanual.4
@@ -83,6 +83,17 @@ begin
         variablesfile = %GXDocDir%\\Variables.txt
         webskinfilename = %GXDocDir%\\GExpertsSkinBlack.hmskin
         winhelpopt = HLP
+      end
+      action.ini.write
+      begin
+        allowcreate = false
+        deleteifblank = false
+        id = {50A73F4C-92A4-42C6-8137-65DA3F4A746E}
+        inifile = %GXDocDir%\\HelpFile.ini
+        newvalue = %GXDocOutputDir%\\GExperts.chm
+        section = [Files]
+        valuename = HelpFile
+        valuetype = vtString
       end
     end
   end
