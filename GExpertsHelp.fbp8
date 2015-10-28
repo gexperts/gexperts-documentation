@@ -41,9 +41,9 @@ begin
         filename = %GXDocDir%\\Variables.txt
         id = {21AEFD95-C599-4E6E-8C64-30B4250C1746}
         ignorenocontent = true
-        newcontent = "VERSION_MAJOR\\=%MajorVersion%" +
-                     "VERSION_MINOR\\=%MinorVersion%%ReleaseVersion%" +
-                     "VERSION_BUILD\\=%Build%" +
+        newcontent = "VERSION_MAJOR\=%MajorVersion%" +
+                     "VERSION_MINOR\=%MinorVersion%%ReleaseVersion%" +
+                     "VERSION_BUILD\=%Build%" +
                      ""
         writebom = false
         writetoposition = toOverwrite
@@ -91,7 +91,7 @@ begin
         id = {50A73F4C-92A4-42C6-8137-65DA3F4A746E}
         inifile = %GXDocDir%\\HelpFile.ini
         newvalue = %GXDocOutputDir%\\GExperts.chm
-        section = [Files]
+        section = Files
         valuename = HelpFile
         valuetype = vtString
       end
