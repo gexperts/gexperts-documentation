@@ -86,7 +86,7 @@ begin
       end
       action.ini.write
       begin
-        allowcreate = false
+        allowcreate = true
         deleteifblank = false
         id = {50A73F4C-92A4-42C6-8137-65DA3F4A746E}
         inifile = %GXDocDir%\\HelpFile.ini
